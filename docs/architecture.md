@@ -2,30 +2,82 @@
 
 ##Basic Workflow Diagram
 
+Sure, I'll fix the diagrams so they render correctly in Markdown.
+
+```markdown
+# Architecture
+
+## Basic Workflow Diagram
+
+```
 +---------------------+
-| Start Process |
+| Start Process       |
 +---------------------+
-|
-v
+          |
+          v
 +---------------------+
-| Initialize Build |
-| Environment |
+| Initialize Build    |
+| Environment         |
 +---------------------+
-|
-v
+          |
+          v
 +---------------------+
-| Run Build Script |
+| Run Build Script    |
 +---------------------+
-|
-v
+          |
+          v
 +---------------------+
-| Validate Output |
+| Validate Output     |
 +---------------------+
-|
-v
+          |
+          v
 +---------------------+
-| End Process |
+| End Process         |
 +---------------------+
+```
+
+## Basic Component Diagram
+
+```
++------------------+
+|    User Input    |
++------------------+
+          |
+          v
++------------------+     +-----------------+
+|  Application     | --->|    Database     |
+|     Logic        |     |                 |
++------------------+     +-----------------+
+          |
+          v
++------------------+
+|   Output Data    |
++------------------+
+```
+
+## Deployment Architecture
+
+```
++-------------------+
+|   User Device     |
++-------------------+
+          |
+          v
++-------------------+
+|  Load Balancer    |
++-------------------+
+     |       |
+     v       v
++-----------+ +-----------+
+| Web Server| | Web Server|
++-----------+ +-----------+
+     |       |
+     v       v
++-------------------+
+|     Database     |
++-------------------+
+```
+```
 
 ##Basic Component Diagram
 +------------------+
